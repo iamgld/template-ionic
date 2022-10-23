@@ -47,7 +47,7 @@
 								"output": "svg"
 							}
 						],
-						"styles": ["src/theme/variables.scss", "src/index.scss"],
+						"styles": ["src/index.scss"],
 						"stylePreprocessorOptions": {
 							"includePaths": ["./src/app/styles"]
 						},
@@ -88,17 +88,18 @@
 									"maximumError": "4kb"
 								}
 							]
-						}
+						},
+						"development": {}
 					}
 				},
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "angular-template:build:production"
+							"browserTarget": "ionic-template:build:production"
 						},
 						"development": {
-							"browserTarget": "angular-template:build:development"
+							"browserTarget": "ionic-template:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
