@@ -1,6 +1,6 @@
-# NgTemplateLint
+# Angular Template
 
-This template was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+This template was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8
 
 ---
 
@@ -26,6 +26,24 @@ to serve and access from a local network use this configuration:
 
 ```
   yarn start:host || npm run start:host
+```
+
+to serve as `production` run use this configuration:
+
+```
+  yarn start:prod || npm run start:prod
+```
+
+to serve and run `ios` emulator use this configuration:
+
+```
+  yarn start:ios || npm run start:ios
+```
+
+to serve and run `android` emulator use this configuration:
+
+```
+  yarn start:android || npm run start:android
 ```
 
 <!-- ## Code scaffolding
@@ -58,6 +76,18 @@ to compile for `webpack-bundle-analyzer` use this configuration:
   yarn build:stats || npm run build:stats
 ```
 
+to compile for `ios` use this configuration:
+
+```
+  yarn build:ios || npm run build:ios
+```
+
+to compile for `android` use this configuration:
+
+```
+  yarn build:android || npm run build:android
+```
+
 ---
 
 ## Linter
@@ -82,6 +112,12 @@ to run linter default inside angular use this configuration:
 
 ```
   yarn lint:ng || npm run lint:ng
+```
+
+to show error and automatically fix it use ng configuration:
+
+```
+  yarn lint:ng:fix || npm run lint:ng:fix
 ```
 
 ---
