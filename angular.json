@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"ionic-template": {
+		"template-ionic": {
 			"root": "",
 			"sourceRoot": "src",
 			"projectType": "application",
@@ -30,7 +30,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "www",
+						"outputPath": "dist",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
@@ -96,10 +96,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "ionic-template:build:production"
+							"browserTarget": "template-ionic:build:production"
 						},
 						"development": {
-							"browserTarget": "ionic-template:build:development"
+							"browserTarget": "template-ionic:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
@@ -107,7 +107,7 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"browserTarget": "ionic-template:build"
+						"browserTarget": "template-ionic:build"
 					}
 				},
 				"test": {
@@ -149,21 +149,21 @@
 					"builder": "@angular-devkit/build-angular:protractor",
 					"options": {
 						"protractorConfig": "e2e/protractor.conf.js",
-						"devServerTarget": "ionic-template:serve"
+						"devServerTarget": "template-ionic:serve"
 					},
 					"configurations": {
 						"production": {
-							"devServerTarget": "ionic-template:serve:production"
+							"devServerTarget": "template-ionic:serve:production"
 						},
 						"ci": {
-							"devServerTarget": "ionic-template:serve:ci"
+							"devServerTarget": "template-ionic:serve:ci"
 						}
 					}
 				}
 			}
 		}
 	},
-	"defaultProject": "ionic-template",
+	"defaultProject": "template-ionic",
 	"cli": {
 		"analytics": "false",
 		"schematicCollections": ["@ionic/angular-toolkit"]
