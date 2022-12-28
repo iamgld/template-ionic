@@ -1,7 +1,7 @@
 {
-  "name": "ionic-template",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
+	"name": "template-ionic",
+	"integrations": {
+		"capacitor": {}
+	},
+	"type": "angular"
 }
