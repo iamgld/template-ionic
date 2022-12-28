@@ -1,6 +1,7 @@
 {
-	"name": "ionic-template",
-	"version": "1.0.0",
+	"name": "template-ionic",
+	"private": false,
+	"version": "1.0.1",
 	"author": "Gregory J Lopez",
 	"homepage": "https://iamgld.com",
 	"scripts": {
@@ -25,7 +26,6 @@
 		"analyze": "webpack-bundle-analyzer dist/stats.json",
 		"postinstall": "husky install"
 	},
-	"private": true,
 	"dependencies": {
 		"@angular/common": "14.2.7",
 		"@angular/core": "14.2.7",
